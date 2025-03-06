@@ -8,77 +8,100 @@
 </head>
 <body>
 
+    <!-- ナビゲーションバー -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #8B7355;">
         <div class="container">
             <a class="navbar-brand" href="#">Open OnDemand Japan</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#purpose">目的</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#exchange">情報交換</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#workshops">ワークショップ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#apps">Passenger Applications</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <div class="container-fluid text-center py-5 mt-5" style="background-color: #EEDFCC; color: #5A4632;">
-        <h1 class="display-4">Open OnDemand Japan Community</h1>
-        <p class="lead">日本でのOpen OnDemandの普及を目的としたコミュニティサイトです。</p>
+    <!-- 目的 -->
+    <div id="purpose" class="container py-3">
+        <h3>目的</h3>
+        <p>日本でのOpen OnDemandの普及を目的としたコミュニティサイトです。</p>
     </div>
 
-    <div class="container py-5">
-        <div class="row text-center">
-            <div class="col-md-6">
-                <h2 class="mb-3">Slackに参加しよう！</h2>
-                <p>Open OnDemand JapanのSlackコミュニティで情報交換や質問ができます。</p>
-                <a href="https://join.slack.com/t/openondemandj-so68876/shared_invite/zt-31i86ntg0-kILa9NfRrdEwE9c3Glft8Q" 
-                   class="btn btn-success btn-lg d-inline-flex align-items-center shadow-lg" 
-                   target="_blank" rel="noopener noreferrer">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png" alt="Slack Logo" class="me-2" width="24" height="24">
-                    Slackに参加する
-                </a>
-            </div>
-
-            <div class="col-md-6">
-                <h2 class="mb-3">GitHub Discussionsで話そう！</h2>
-                <p>技術的な質問や意見交換をGitHub Discussionsで行いましょう。</p>
-                <a href="https://github.com/orgs/OpenOnDemandJP/discussions" 
-                   class="btn btn-dark btn-lg d-inline-flex align-items-center shadow-lg" 
-                   target="_blank" rel="noopener noreferrer">
-                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" class="me-2" width="24" height="24">
-                    Discussionsを見る
-                </a>
-            </div>
+    <!-- 情報交換（Slack & GitHub Discussions 並列配置） -->
+    <div id="exchange" class="container py-3">
+        <h3>情報交換</h3>
+        <div class="d-flex gap-3 pb-3">
+            <a href="https://join.slack.com/t/openondemandj-so68876/shared_invite/zt-31i86ntg0-kILa9NfRrdEwE9c3Glft8Q" 
+               class="btn btn-success btn-lg d-inline-flex align-items-center shadow-lg" 
+               target="_blank" rel="noopener noreferrer">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png" alt="Slack Logo" class="me-2" width="24" height="24">
+                Slackに参加する
+            </a>
+            <a href="https://github.com/orgs/OpenOnDemandJP/discussions" 
+               class="btn btn-dark btn-lg d-inline-flex align-items-center shadow-lg" 
+               target="_blank" rel="noopener noreferrer">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" class="me-2" width="24" height="24">
+                Discussionsを見る
+            </a>
         </div>
     </div>
 
-    <div class="container text-center py-5">
-        <h2 class="mb-3">Passenger Applications</h2>
-        <p class="mb-4">Open OnDemand上で動作する便利なアプリケーションを紹介します。</p>
+    <!-- ワークショップ -->
+    <div id="workshops" class="container py-3">
+        <h3>ワークショップ</h3>
+        <ul>
+            <li class="mb-1"><a href="https://www.media.hiroshima-u.ac.jp/aboutus/cloudsympo/sympo2025/" target="_blank" rel="noopener noreferrer">
+                大学等におけるクラウドサービス利用シンポジウム 2025（2025/03/13）
+            </a></li>
+            <li class="mb-1"><a href="https://www.pccluster.org/ja/event/2025/01/250127-hpc-oss-ws.html" target="_blank" rel="noopener noreferrer">
+                HPC-OSSワークショップ 2025（2025/01/27）
+            </a></li>
+            <li><a href="https://www.pccluster.org/ja/event/2023/09/231011-ws-openondemand.html" target="_blank" rel="noopener noreferrer">
+                Open OnDemand ワークショップ 2023（2023/10/11）
+            </a></li>
+        </ul>
+    </div>
+
+    <!-- Passenger Applications -->
+    <div id="apps" class="container py-3">
+        <h3>Passenger Applications</h3>
+        <p>Open OnDemand上で動作する便利なアプリケーションを紹介します。</p>
 
         <div class="row">
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <div class="card-body">
+            <!-- Open Composer -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100 d-flex flex-column">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Open Composer</h5>
-                        <p class="card-text">ジョブスクリプトを簡単に生成・投入・管理</p>
-                        <a href="https://github.com/RIKEN-RCCS/OpenComposer" class="btn btn-primary" target="_blank" rel="noopener noreferrer">詳細を見る</a>
+                        <p class="card-text flex-grow-1">ジョブスクリプトを簡単に生成・投入・管理</p>
+                        <a href="https://github.com/RIKEN-RCCS/OpenComposer" class="btn btn-primary mt-auto" target="_blank" rel="noopener noreferrer">詳細を見る</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <div class="card-body">
+            <!-- HPCI共用ストレージ（準備中） -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100 d-flex flex-column">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">HPCI共用ストレージ</h5>
-                        <p class="card-text">HPCI共用ストレージにアクセス</p>
-                        <span class="badge bg-secondary">Coming Soon</span>
+                        <p class="card-text flex-grow-1">HPCI共用ストレージにアクセス</p>
+                        <span class="badge bg-secondary py-2">Coming Soon</span>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <div class="card-body">
+            <!-- GakuNin RDM（準備中） -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100 d-flex flex-column">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">GakuNin RDM</h5>
-                        <p class="card-text">GakuNin RDM（研究データ管理基盤）にアクセス</p>
-                        <span class="badge bg-secondary">Coming Soon</span>
+                        <p class="card-text flex-grow-1">GakuNin RDM（研究データ管理基盤）にアクセス</p>
+                        <span class="badge bg-secondary py-2">Coming Soon</span>
                     </div>
                 </div>
             </div>
@@ -87,7 +110,7 @@
 
     <!-- フッター -->
     <footer class="text-center py-3" style="background-color: #EEDFCC;">
-        <p class="mb-0">© 2025 Open OnDemand Japan Community</p>
+        <p class="mb-0"> &copy; Open OnDemand Japan</p>
     </footer>
 
     <!-- Bootstrap JS -->
