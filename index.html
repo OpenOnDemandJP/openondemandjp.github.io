@@ -5,19 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Open OnDemand JP</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    h3 {
+        font-weight: bold;
+        font-size: 1.7rem;
+        letter-spacing: 1px;
+        border-bottom: 3px solid #8B7355;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+        position: relative;
+        color: #6A4A3C;
+    }
+    h4 {
+        font-weight: bold;
+        font-size: 1.3rem;
+        letter-spacing: 0.5px;
+        padding-left: 10px;
+        border-left: 8px solid #8B7355;
+        color: #6A4A3C;
+    }
+    </style>
 </head>
-<style>
-h3 {
-    font-weight: bold;
-    font-size: 1.7rem;
-    letter-spacing: 1px;
-    border-bottom: 3px solid #8B7355;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-    position: relative;
-    color: #6A4A3C;
-}
-</style>
 <body>
     <!-- ナビゲーションバー -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #8B7355;">
@@ -28,12 +36,9 @@ h3 {
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#purpose">目的</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#exchange">情報交換</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#workshops">ワークショップ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#seminars">セミナー</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#purpose">目的</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#apps">アプリケーション</a></li>
                     <li class="nav-item"><a class="nav-link" href="#presentations">発表</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#apps">Passenger Applications</a></li>
                 </ul>
             </div>
         </div>
@@ -43,11 +48,7 @@ h3 {
     <div id="purpose" class="container py-3">
       <h3>目的</h3>
         <p>本サイトは、日本でのOpen OnDemandの普及を目的としたコミュニティサイトです。</p>
-    </div>
 
-    <!-- 情報交換（Slack & GitHub Discussions 並列配置） -->
-    <div id="exchange" class="container py-3">
-        <h3>情報交換</h3>
         <div class="d-flex gap-3 pb-3">
             <a href="https://join.slack.com/t/openondemandj-so68876/shared_invite/zt-31i86ntg0-kILa9NfRrdEwE9c3Glft8Q" 
                class="btn btn-success btn-lg d-inline-flex align-items-center shadow-lg" 
@@ -64,95 +65,10 @@ h3 {
         </div>
     </div>
 
-    <!-- ワークショップ -->
-    <div id="workshops" class="container py-3">
-        <h3>ワークショップ</h3>
-        <ul>
-            <li class="mb-1"><a href="https://www.pccluster.org/ja/event/2025/01/250127-hpc-oss-ws.html" target="_blank" rel="noopener noreferrer">
-                HPC-OSSワークショップ
-            </a>（2025/01/28）</li>
-            <li><a href="https://www.pccluster.org/ja/event/2023/09/231011-ws-openondemand.html" target="_blank" rel="noopener noreferrer">
-                Open OnDemandワークショップ
-            </a>（2023/10/11）</li>
-        </ul>
-    </div>
-
-    <!-- セミナー -->
-    <div id="seminars" class="container py-3">
-        <h3>セミナー</h3>
-        <ul>
-            <li class="mb-1">
-                学認クラウドオンデマンド構築サービスハンズオンセミナー．
-                <a href="https://www.media.hiroshima-u.ac.jp/aboutus/cloudsympo/sympo2025/" target="_blank" rel="noopener noreferrer">
-                大学等におけるクラウドサービス利用シンポジウム
-                </a>（2025/03/13）</li>
-            <li class="mb-1">
-       	        学認クラウドオンデマンド構築サービスを使用したOpenHPC+Open OnDemand体験ハンズオンセミナー．
-                <a href="https://www.iic.hokudai.ac.jp/news/2737/" target="_blank" rel="noopener noreferrer">
-                CloudWeek2024@Hokkaido University
-                </a>（2024/09/11）
-      	    </a></li>
-            <li class="mb-1">
-       	        学認クラウドオンデマンド構築サービスハンズオンセミナー．
-                <a href="https://www.media.hiroshima-u.ac.jp/aboutus/cloudsympo/sympo2024/" target="_blank" rel="noopener noreferrer">
-                大学等におけるクラウドサービス利用シンポジウム
-                </a>（2024/02/29）
-      	    </a></li>
-        </ul>
-    </div>  
-
-    <!-- 発表 -->
-    <div id="presentations" class="container py-3">
-        <h3>発表</h3>
-        <ul>
-            <li class="mb-1">
-                中尾昌広，山本啓二．
-                "HPCクラスタにおけるバッチジョブ投入のためのWebアプリケーションOpen Composerの開発"，
-                <a href="https://www.ipsj.or.jp/kenkyukai/event/arc251hpc197.html" target="_blank" rel="noopener noreferrer">
-                第197回HPC研究発表会
-                </a>（2024/12/17）
-                [<a href="https://mnakao.net/data/2024/HPC197.pdf" target="_blank" rel="noopener noreferrer">PDF</a>]
-                [<a href="https://mnakao.net/data/2024/HPC197-slide.pdf" target="_blank" rel="noopener noreferrer">Slide</a>]
-            </a></li>
-            <li class="mb-1">
-                谷澤悠太，高橋慧智，下村陽一，滝沢寛之．
-                "HPCシステム用ウェブポータルにおけるジョブスケジューラの抽象化"，
-                <a href="https://www.ipsj.or.jp/kenkyukai/event/hpc195.html" target="_blank" rel="noopener noreferrer">
-                第195回HPC研究発表会
-                </a>（2024/08/08）
-            </a></li>
-            <li class="mb-1">
-                中尾昌広，金山秀智，長久勝，藤原一毅，竹房あつ子，三浦信一，山本啓二．
-                "スーパーコンピュータ「富岳」における HPCクラスタ用WebポータルOpen OnDemandの運用"，
-                <a href="https://www.ipsj.or.jp/kenkyukai/event/hpc191.html" target="_blank" rel="noopener noreferrer">
-                第191回HPC研究発表会
-                </a>（2023/09/27）
-                [<a href="https://mnakao.net/data/2023/HPC191.pdf" target="_blank" rel="noopener noreferrer">PDF</a>]
-                [<a href="https://mnakao.net/data/2023/HPC191-slide.pdf" target="_blank" rel="noopener noreferrer">Slide</a>]
-            </a></li>
-            <li class="mb-1">
-                大江和一，竹房あつ子，丹生智也，合田憲人．
-                "クラウド環境構築システムVCPによるmdxでのスケーラブルなHPCクラスタの構築"，
-                <a href="https://www.ipsj.or.jp/kenkyukai/event/hpc190.html" target="_blank" rel="noopener noreferrer">
-                第190回HPC研究発表会
-                </a>（2023/08/03）
-            </a></li>
-            <li class="mb-1">
-                中尾昌広，三浦信一，山本啓二．
-                "スーパーコンピュータ「富岳」における HPCクラスタ用WebポータルOpen OnDemandの導入"，
-                <a href="https://www.ipsj.or.jp/kenkyukai/event/hpc186.html" target="_blank" rel="noopener noreferrer">
-                第186回HPC研究発表会
-                </a>（2022/09/26）
-                [<a href="https://mnakao.net/data/2022/HPC186.pdf" target="_blank" rel="noopener noreferrer">PDF</a>]
-                [<a href="https://mnakao.net/data/2022/HPC186-slide.pdf" target="_blank" rel="noopener noreferrer">Slide</a>]
-            </a></li>
-        </ul>
-    </div>
-
     <!-- Passenger Applications -->
     <div id="apps" class="container py-3">
-        <h3>Passenger Applications</h3>
-        <p>Open OnDemand上で動作する便利なアプリケーションを紹介します。</p>
+        <h3>アプリケーション</h3>
+        <p>Open OnDemand上で動作する便利なPassenger Applicationsを紹介します。</p>
 
         <div class="row">
             <!-- Open Composer -->
@@ -188,6 +104,79 @@ h3 {
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- 発表 -->
+    <div id="presentations" class="container py-3">
+        <h3>発表</h3>
+        <h4>ワークショップ</h4>
+        <ul class="mb-4">
+            <li class="mb-1"><a href="https://www.pccluster.org/ja/event/2025/01/250127-hpc-oss-ws.html" target="_blank" rel="noopener noreferrer">
+                HPC-OSSワークショップ</a>（2025/01/28）
+            </li>
+            <li><a href="https://www.pccluster.org/ja/event/2023/09/231011-ws-openondemand.html" target="_blank" rel="noopener noreferrer">
+                Open OnDemandワークショップ</a>（2023/10/11）
+            </li>
+        </ul>
+
+	<h4>セミナー</h4>
+	<ul class="mb-4">
+            <li class="mb-1">
+		学認クラウドオンデマンド構築サービスハンズオンセミナー．
+		<a href="https://www.media.hiroshima-u.ac.jp/aboutus/cloudsympo/sympo2025/" target="_blank" rel="noopener noreferrer">
+		大学等におけるクラウドサービス利用シンポジウム</a>（2025/03/13）
+            </li>
+            <li class="mb-1">
+                学認クラウドオンデマンド構築サービスを使用したOpenHPC+Open OnDemand体験ハンズオンセミナー．
+                <a href="https://www.iic.hokudai.ac.jp/news/2737/" target="_blank" rel="noopener noreferrer">
+                CloudWeek2024@Hokkaido University</a>（2024/09/11）
+            </li>
+            <li class="mb-1">
+                学認クラウドオンデマンド構築サービスハンズオンセミナー．
+                <a href="https://www.media.hiroshima-u.ac.jp/aboutus/cloudsympo/sympo2024/" target="_blank" rel="noopener noreferrer">
+                大学等におけるクラウドサービス利用シンポジウム</a>（2024/02/29）
+            </li>
+        </ul>
+
+        <h4 class="mt-4">学会発表</h4>
+        <ul>
+            <li class="mb-1">
+                中尾昌広，山本啓二．
+                "HPCクラスタにおけるバッチジョブ投入のためのWebアプリケーションOpen Composerの開発"，
+                <a href="https://www.ipsj.or.jp/kenkyukai/event/arc251hpc197.html" target="_blank" rel="noopener noreferrer">
+                第197回HPC研究発表会</a>（2024/12/17）
+                [<a href="https://mnakao.net/data/2024/HPC197.pdf" target="_blank" rel="noopener noreferrer">PDF</a>]
+                [<a href="https://mnakao.net/data/2024/HPC197-slide.pdf" target="_blank" rel="noopener noreferrer">Slide</a>]
+            </li>
+            <li class="mb-1">
+                谷澤悠太，高橋慧智，下村陽一，滝沢寛之．
+                "HPCシステム用ウェブポータルにおけるジョブスケジューラの抽象化"，
+                <a href="https://www.ipsj.or.jp/kenkyukai/event/hpc195.html" target="_blank" rel="noopener noreferrer">
+                第195回HPC研究発表会</a>（2024/08/08）
+            </li>
+            <li class="mb-1">
+                中尾昌広，金山秀智，長久勝，藤原一毅，竹房あつ子，三浦信一，山本啓二．
+                "スーパーコンピュータ「富岳」における HPCクラスタ用WebポータルOpen OnDemandの運用"，
+                <a href="https://www.ipsj.or.jp/kenkyukai/event/hpc191.html" target="_blank" rel="noopener noreferrer">
+                第191回HPC研究発表会</a>（2023/09/27）
+                [<a href="https://mnakao.net/data/2023/HPC191.pdf" target="_blank" rel="noopener noreferrer">PDF</a>]
+                [<a href="https://mnakao.net/data/2023/HPC191-slide.pdf" target="_blank" rel="noopener noreferrer">Slide</a>]
+            </li>
+            <li class="mb-1">
+                大江和一，竹房あつ子，丹生智也，合田憲人．
+                "クラウド環境構築システムVCPによるmdxでのスケーラブルなHPCクラスタの構築"，
+                <a href="https://www.ipsj.or.jp/kenkyukai/event/hpc190.html" target="_blank" rel="noopener noreferrer">
+                第190回HPC研究発表会</a>（2023/08/03）
+            </li>
+            <li class="mb-1">
+                中尾昌広，三浦信一，山本啓二．
+                "スーパーコンピュータ「富岳」における HPCクラスタ用WebポータルOpen OnDemandの導入"，
+                <a href="https://www.ipsj.or.jp/kenkyukai/event/hpc186.html" target="_blank" rel="noopener noreferrer">
+                第186回HPC研究発表会</a>（2022/09/26）
+                [<a href="https://mnakao.net/data/2022/HPC186.pdf" target="_blank" rel="noopener noreferrer">PDF</a>]
+                [<a href="https://mnakao.net/data/2022/HPC186-slide.pdf" target="_blank" rel="noopener noreferrer">Slide</a>]
+            </li>
+        </ul>
     </div>
 
     <!-- フッター -->
