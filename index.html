@@ -1,235 +1,224 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Open OnDemand JP</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-    h3 {
-        font-weight: bold;
-        font-size: 1.7rem;
-        letter-spacing: 1px;
-        border-bottom: 4px solid #9E2A2B; /* 朱色 */
-        padding-bottom: 8px;
-        margin-bottom: 15px;
-        position: relative;
-    }
-    h4 {
-        font-weight: bold;
-        font-size: 1.3rem;
-        letter-spacing: 0.5px;
-        padding-left: 8px;
-        border-left: 10px solid #585B56; /* 鈍色 */
-        padding-top: 4px;
-        padding-bottom: 4px;
-    }
-    .navbar {
-        background-color: #9E2A2B !important; /* 朱色 */
-    }
-    .navbar-brand, .navbar-nav .nav-link {
-        color: white !important;
-    }
-    .navbar-nav .nav-link:hover {
-        color: rgba(255, 255, 255, 0.6) !important;
-    }
-    footer {
-        background-color: #9E2A2B !important;
-        color: white !important;
-    }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open OnDemand JP</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+  h3 {
+    font-weight: bold;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    border-bottom: 4px solid #9E2A2B; /* 朱色 */
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  h4 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    padding-left: 8px;
+    border-left: 10px solid #585B56; /* 鈍色 */
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 20px;
+  }
+  li {
+    margin-bottom: 0.25rem;
+  }
+  .navbar {
+    background-color: #9E2A2B !important; /* 朱色 */
+  }
+  .navbar-brand, .navbar-nav .nav-link {
+    color: white !important;
+  }
+  .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.6) !important;
+  }
+  footer {
+    background-color: #9E2A2B !important;
+    color: white !important;
+  }
+  </style>
 </head>
 <body>
-    <!-- ナビゲーションバー -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="https://openondemandjp.github.io">Open OnDemand JP</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item"><a class="nav-link" href="#purpose">目的</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#apps">アプリケーション</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#presentations">発表</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- 目的 -->
-    <div id="purpose" class="container py-3">
-      <h3>目的</h3>
-        <p>本サイトは、<a href="https://openondemand.org">Open OnDemand</a>の日本での普及を目的としたコミュニティサイトです。</p>
-
-        <div class="d-flex gap-3 pb-3">
-            <a href="https://join.slack.com/t/openondemandj-so68876/shared_invite/zt-31i86ntg0-kILa9NfRrdEwE9c3Glft8Q" 
-               class="btn btn-success btn-lg d-inline-flex align-items-center shadow-lg" 
-               target="_blank" rel="noopener noreferrer">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png" alt="Slack Logo" class="me-2" width="24" height="24">
-                Slackに参加する
-            </a>
-        </div>
+  <!-- ナビゲーションバー -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="https://openondemandjp.github.io">Open OnDemand JP</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#purpose">目的</a></li>
+          <li class="nav-item"><a class="nav-link" href="#github">GitHubリポジトリ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#presentations">発表</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <!-- Passenger Applications -->
-    <div id="apps" class="container py-3">
-        <h3>アプリケーション</h3>
-        <p>Open OnDemand上で動作する便利なPassenger Applicationを紹介します。</p>
-
-        <div class="row">
-            <!-- Open Composer -->
-            <div class="col-md-4 mb-4">
-                <div class="card shadow-sm h-100 d-flex flex-column">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Open Composer</h5>
-                        <p class="card-text flex-grow-1">ジョブスクリプトを簡単に生成・投入・管理</p>
-                        <a href="https://github.com/RIKEN-RCCS/OpenComposer" class="btn btn-primary mt-auto" target="_blank" rel="noopener noreferrer">詳細を見る</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- HPCI共用ストレージ -->
-            <div class="col-md-4 mb-4">
-                <div class="card shadow-sm h-100 d-flex flex-column">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">HPCI共用ストレージ</h5>
-                        <p class="card-text flex-grow-1">HPCI共用ストレージにアクセス</p>
-                        <a href="https://github.com/RIKEN-RCCS/HPCI_Shared_Storage" class="btn btn-primary mt-auto" target="_blank" rel="noopener noreferrer">詳細を見る</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- GakuNin RDM -->
-            <div class="col-md-4 mb-4">
-                <div class="card shadow-sm h-100 d-flex flex-column">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">GakuNin RDM</h5>
-                        <p class="card-text flex-grow-1">GakuNin RDM（研究データ管理基盤）にアクセス</p>
-                        <a href="https://github.com/RIKEN-RCCS/GakuNin_RDM" class="btn btn-primary mt-auto" target="_blank" rel="noopener noreferrer">詳細を見る</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <!-- 目的 -->
+  <div id="purpose" class="container py-3">
+    <h3>目的</h3>
+    <p>本サイトは、<a href="https://openondemand.org">Open OnDemand</a>の日本での普及を目的としたコミュニティサイトです。</p>
+    <div class="d-flex gap-3 pb-3">
+      <a href="https://join.slack.com/t/openondemandj-so68876/shared_invite/zt-31i86ntg0-kILa9NfRrdEwE9c3Glft8Q" 
+         class="btn btn-success btn-lg d-inline-flex align-items-center shadow-lg" 
+         target="_blank" rel="noopener noreferrer">
+         <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png" alt="Slack Logo" class="me-2" width="24" height="24">
+         Slackに参加する
+      </a>
     </div>
+  </div>
 
-    <!-- 発表 -->
-    <div id="presentations" class="container py-3">
-        <h3>発表</h3>
-        <h4>ワークショップ</h4>
-        <ul class="mb-4">
-            <li class="mb-1"><a href="https://www.pccluster.org/ja/event/2025/01/250127-hpc-oss-ws.html" target="_blank" rel="noopener noreferrer">
-                HPC-OSSワークショップ</a>（2025/01/28）
-            </li>
-            <li><a href="https://www.pccluster.org/ja/event/2023/09/231011-ws-openondemand.html" target="_blank" rel="noopener noreferrer">
-                Open OnDemandワークショップ</a>（2023/10/11）
-            </li>
-        </ul>
+  <!-- Passenger Applications -->
+  <div id="github" class="container py-3">
+    <h3>GitHubリポジトリ</h3>
+    <h4>設定ファイル</h4>
+    <ul>
+      <li>
+        <a href="https://github.com/RIKEN-RCCS/ondemand_fugaku" target="_blank" rel="noopener noreferrer">スーパーコンピュータ「富岳」</a>
+      </li>
+      <li>
+        <a href="https://github.com/RIKEN-RCCS/ondemand_rccs_cloud" target="_blank" rel="noopener noreferrer">R-CCSクラウド</a>
+      </li>
+    </ul>
 
-	<h4>セミナー</h4>
-	<ul class="mb-4">
-            <li class="mb-1">
-		学認クラウドオンデマンド構築サービスハンズオンセミナー．
-		<a href="https://www.media.hiroshima-u.ac.jp/aboutus/cloudsympo/sympo2025/" target="_blank" rel="noopener noreferrer">
-		大学等におけるクラウドサービス利用シンポジウム</a>（2025/03/13）
-            </li>
-            <li class="mb-1">
-                学認クラウドオンデマンド構築サービスを使用したOpenHPC+Open OnDemand体験ハンズオンセミナー．
-                <a href="https://www.iic.hokudai.ac.jp/news/2737/" target="_blank" rel="noopener noreferrer">
-                CloudWeek2024@Hokkaido University</a>（2024/09/11）
-            </li>
-            <li class="mb-1">
-                学認クラウドオンデマンド構築サービスハンズオンセミナー．
-                <a href="https://www.media.hiroshima-u.ac.jp/aboutus/cloudsympo/sympo2024/" target="_blank" rel="noopener noreferrer">
-                大学等におけるクラウドサービス利用シンポジウム</a>（2024/02/29）
-            </li>
-        </ul>
+    <h4>Passenger Application</h4>
+    <ul>
+      <li>
+        <a href="https://github.com/RIKEN-RCCS/OpenComposer" target="_blank" rel="noopener noreferrer">Open Composer</a>：ジョブスクリプトを簡単に生成・投入・管理
+      </li>
+      <li>
+        <a href="https://github.com/RIKEN-RCCS/HPCI_Shared_Storage" target="_blank" rel="noopener noreferrer">HPCI Shared Storage</a>：HPCI共用ストレージにアクセス
+      </li>
+      <li>
+        <a href="https://github.com/RIKEN-RCCS/GakuNin_RDM" target="_blank" rel="noopener noreferrer">GakuNin RDM</a>：GakuNin RDM（研究データ管理基盤）にアクセス
+      </li>
+    </ul>
 
-        <h4 class="mt-4">学会発表</h4>
-        <ul>
-            <li class="mb-1">
-              Masahiro Nakao,  Keiji Yamamoto
-       	      ``Open Composer: A Web-Based Application for Generating and Managing Batch Jobs on HPC Clusters'',
-       	      12th International Workshop on HPC User Support Tools. (2025/11/16)
-            </li>
-            <li class="mb-1">
-                大西尚樹，谷村勇輔，滝澤真一朗，中田秀基．
-                "ABCIにおける共用の推論評価試験環境の提供に向けた性能調査と方式検討"，
-                <a href="https://www.ipsj.or.jp/kenkyukai/event/hpc200.html" target="_blank" rel="noopener noreferrer">
-                第200回HPC研究発表会</a>（2025/08/05）
-            </li>
-            <li class="mb-1">
-                中尾昌広，山本啓二．
-                "HPCクラスタにおけるバッチジョブ投入のためのWebアプリケーションOpen Composerの開発"，
-                <a href="https://www.ipsj.or.jp/kenkyukai/event/arc251hpc197.html" target="_blank" rel="noopener noreferrer">
-                第197回HPC研究発表会</a>（2024/12/17）
-                [<a href="https://mnakao.net/data/2024/HPC197.pdf" target="_blank" rel="noopener noreferrer">論文</a>]
-                [<a href="https://mnakao.net/data/2024/HPC197-slide.pdf" target="_blank" rel="noopener noreferrer">スライド</a>]
-            </li>
-            <li class="mb-1">
-                谷澤悠太，高橋慧智，下村陽一，滝沢寛之．
-                "HPCシステム用ウェブポータルにおけるジョブスケジューラの抽象化"，
-                <a href="https://www.ipsj.or.jp/kenkyukai/event/hpc195.html" target="_blank" rel="noopener noreferrer">
-                第195回HPC研究発表会</a>（2024/08/08）
-            </li>
-            <li class="mb-1">
-               川鍋友宏，十川直幸，中尾昌広，小野謙二．
-               "解析ワークフローツールWHEELの紹介とスーパーコンピューター「富岳」Open OnDemandでの利用"，
-               <a href="https://www.ipsj.or.jp/kenkyukai/event/arc247hpc192.html" target="_blank" rel="noopener noreferrer">
-               第192回HPC研究発表会</a>（2023/12/05）
-            </li>
-            <li class="mb-1">
-              Masahiro Nakao, Hidetomo Kaneyama, Masaru Nagaku, Ikki Fujiwara, Atsuko Takefusa, Shin’ichi Miura, Keiji Yamamoto
-              ``Introducing Open OnDemand to Supercomputer Fugaku'',
-              10th International Workshop on HPC User Support Tools. (2023/11/12)
-                [<a href="https://dl.acm.org/doi/10.1145/3624062.3624150" target="_blank" rel="noopener noreferrer">論文</a>]
-                [<a href="https://www.mnakao.net/data/2023/HUST2023.pdf" target="_blank" rel="noopener noreferrer">スライド</a>]
-            </li>
-            <li class="mb-1">
-                中尾昌広，金山秀智，長久勝，藤原一毅，竹房あつ子，三浦信一，山本啓二．
-                "スーパーコンピュータ「富岳」における HPCクラスタ用WebポータルOpen OnDemandの運用"，
-                <a href="https://www.ipsj.or.jp/kenkyukai/event/hpc191.html" target="_blank" rel="noopener noreferrer">
-                第191回HPC研究発表会</a>（2023/09/27）
-                [<a href="https://mnakao.net/data/2023/HPC191.pdf" target="_blank" rel="noopener noreferrer">論文</a>]
-                [<a href="https://mnakao.net/data/2023/HPC191-slide.pdf" target="_blank" rel="noopener noreferrer">スライド</a>]
-            </li>
-            <li class="mb-1">
-                大江和一，竹房あつ子，丹生智也，合田憲人．
-                "クラウド環境構築システムVCPによるmdxでのスケーラブルなHPCクラスタの構築"，
-                <a href="https://www.ipsj.or.jp/kenkyukai/event/hpc190.html" target="_blank" rel="noopener noreferrer">
-                第190回HPC研究発表会</a>（2023/08/03）
-            </li>
-            <li class="mb-1">
-                中尾昌広，三浦信一，山本啓二．
-                "スーパーコンピュータ「富岳」における HPCクラスタ用WebポータルOpen OnDemandの導入"，
-                <a href="https://www.ipsj.or.jp/kenkyukai/event/hpc186.html" target="_blank" rel="noopener noreferrer">
-                第186回HPC研究発表会</a>（2022/09/26）
-                [<a href="https://mnakao.net/data/2022/HPC186.pdf" target="_blank" rel="noopener noreferrer">論文</a>]
-                [<a href="https://mnakao.net/data/2022/HPC186-slide.pdf" target="_blank" rel="noopener noreferrer">スライド</a>]
-            </li>
-        </ul>
+    <h4>その他</h4>
+    <ul>
+      <li>
+        <a href="https://github.com/nii-gakunin-cloud/ocs-templates/tree/master/OpenOnDemand" target="_blank" rel="noopener noreferrer">学認クラウドオンデマンド構築サービス テンプレート集</a>：Virtual Cloud ProviderからOpen OnDemand環境を構築するテンプレート
+      </li>
+    </ul>
+  </div>
 
-        <h4 class="mt-4">その他</h4>
-        <ul>
-            <li class="mb-1">
-                スーパーコンピュータ「富岳」におけるOpen OnDemandの利用，サイエンティフィック・システム研究会 (2025/08/18)
-                [<a href="https://mnakao.net/data/2025/ss.pdf" target="_blank" rel="noopener noreferrer">スライド</a>]
-                [<a href="https://mnakao.net/data/2025/ss-demo.mov" target="_blank" rel="noopener noreferrer">デモ</a>]
-            </li>
-            <li class="mb-1">
-                Open OnDemand Meeting in Riken R-CCS, Kobe, Hyogo, Japan (2025/05/23)
-                [<a href="https://buckeyemailosu.sharepoint.com/:p:/s/OSCSharedFiles/ERhF5Vjp2pJBoTCfLQenfnUBasTgu3_lL4xtlqcE_i4JaA?rtime=CBC8rG6e3Ug" target="_blank" rel="noopener noreferrer">スライド1</a>]
-                [<a href="https://mnakao.net/data/2025/ood.pdf" target="_blank" rel="noopener noreferrer">スライド2</a>]
-            </li>
-        </ul>
-    </div>
+  <!-- 発表 -->
+  <div id="presentations" class="container py-2">
+    <h3>発表</h3>
+    <h4>ワークショップ</h4>
+    <ul>
+      <li><a href="https://www.pccluster.org/ja/event/2025/01/250127-hpc-oss-ws.html" target="_blank" rel="noopener noreferrer">HPC-OSSワークショップ</a>（2025/01/28）</li>
+      <li><a href="https://www.pccluster.org/ja/event/2023/09/231011-ws-openondemand.html" target="_blank" rel="noopener noreferrer">Open OnDemandワークショップ</a>（2023/10/11）</li>
+    </ul>
 
-    <!-- フッター -->
-    <footer class="text-center py-2">
-        <p class="mb-0"> &copy; Open OnDemand JP</p>
-    </footer>
+    <h4>セミナー</h4>
+    <ul>
+      <li>
+        学認クラウドオンデマンド構築サービスハンズオンセミナー．
+        <a href="https://www.media.hiroshima-u.ac.jp/aboutus/cloudsympo/sympo2025/" target="_blank" rel="noopener noreferrer">大学等におけるクラウドサービス利用シンポジウム</a>（2025/03/13）
+      </li>
+      <li>
+        学認クラウドオンデマンド構築サービスを使用したOpenHPC+Open OnDemand体験ハンズオンセミナー．
+        <a href="https://www.iic.hokudai.ac.jp/news/2737/" target="_blank" rel="noopener noreferrer">CloudWeek2024@Hokkaido University</a>（2024/09/11）
+      </li>
+      <li>
+        学認クラウドオンデマンド構築サービスハンズオンセミナー．
+        <a href="https://www.media.hiroshima-u.ac.jp/aboutus/cloudsympo/sympo2024/" target="_blank" rel="noopener noreferrer">大学等におけるクラウドサービス利用シンポジウム</a>（2024/02/29）
+      </li>
+    </ul>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <h4>学会発表</h4>
+    <ul>
+      <li>
+        Masahiro Nakao,  Keiji Yamamoto
+        ``Open Composer: A Web-Based Application for Generating and Managing Batch Jobs on HPC Clusters'',
+        12th International Workshop on HPC User Support Tools. (2025/11/16)
+      </li>
+      <li>
+        大西尚樹，谷村勇輔，滝澤真一朗，中田秀基．
+        "ABCIにおける共用の推論評価試験環境の提供に向けた性能調査と方式検討"，
+         <a href="https://www.ipsj.or.jp/kenkyukai/event/hpc200.html" target="_blank" rel="noopener noreferrer">
+         第200回HPC研究発表会</a>（2025/08/05）
+      </li>
+      <li>
+        中尾昌広，山本啓二．
+        "HPCクラスタにおけるバッチジョブ投入のためのWebアプリケーションOpen Composerの開発"，
+        <a href="https://www.ipsj.or.jp/kenkyukai/event/arc251hpc197.html" target="_blank" rel="noopener noreferrer">
+        第197回HPC研究発表会</a>（2024/12/17）
+        [<a href="https://mnakao.net/data/2024/HPC197.pdf" target="_blank" rel="noopener noreferrer">論文</a>]
+        [<a href="https://mnakao.net/data/2024/HPC197-slide.pdf" target="_blank" rel="noopener noreferrer">スライド</a>]
+      </li>
+      <li>
+        谷澤悠太，高橋慧智，下村陽一，滝沢寛之．
+        "HPCシステム用ウェブポータルにおけるジョブスケジューラの抽象化"，
+        <a href="https://www.ipsj.or.jp/kenkyukai/event/hpc195.html" target="_blank" rel="noopener noreferrer">
+        第195回HPC研究発表会</a>（2024/08/08）
+      </li>
+      <li>
+        川鍋友宏，十川直幸，中尾昌広，小野謙二．
+        "解析ワークフローツールWHEELの紹介とスーパーコンピューター「富岳」Open OnDemandでの利用"，
+        <a href="https://www.ipsj.or.jp/kenkyukai/event/arc247hpc192.html" target="_blank" rel="noopener noreferrer">
+        第192回HPC研究発表会</a>（2023/12/05）
+      </li>
+      <li>
+        Masahiro Nakao, Hidetomo Kaneyama, Masaru Nagaku, Ikki Fujiwara, Atsuko Takefusa, Shin’ichi Miura, Keiji Yamamoto
+        ``Introducing Open OnDemand to Supercomputer Fugaku'',
+        10th International Workshop on HPC User Support Tools. (2023/11/12)
+        [<a href="https://dl.acm.org/doi/10.1145/3624062.3624150" target="_blank" rel="noopener noreferrer">論文</a>]
+        [<a href="https://www.mnakao.net/data/2023/HUST2023.pdf" target="_blank" rel="noopener noreferrer">スライド</a>]
+      </li>
+      <li>
+        中尾昌広，金山秀智，長久勝，藤原一毅，竹房あつ子，三浦信一，山本啓二．
+        "スーパーコンピュータ「富岳」における HPCクラスタ用WebポータルOpen OnDemandの運用"，
+        <a href="https://www.ipsj.or.jp/kenkyukai/event/hpc191.html" target="_blank" rel="noopener noreferrer">
+        第191回HPC研究発表会</a>（2023/09/27）
+        [<a href="https://mnakao.net/data/2023/HPC191.pdf" target="_blank" rel="noopener noreferrer">論文</a>]
+        [<a href="https://mnakao.net/data/2023/HPC191-slide.pdf" target="_blank" rel="noopener noreferrer">スライド</a>]
+      </li>
+      <li>
+        大江和一，竹房あつ子，丹生智也，合田憲人．
+        "クラウド環境構築システムVCPによるmdxでのスケーラブルなHPCクラスタの構築"，
+        <a href="https://www.ipsj.or.jp/kenkyukai/event/hpc190.html" target="_blank" rel="noopener noreferrer">
+        第190回HPC研究発表会</a>（2023/08/03）
+      </li>
+      <li>
+        中尾昌広，三浦信一，山本啓二．
+        "スーパーコンピュータ「富岳」における HPCクラスタ用WebポータルOpen OnDemandの導入"，
+        <a href="https://www.ipsj.or.jp/kenkyukai/event/hpc186.html" target="_blank" rel="noopener noreferrer">
+        第186回HPC研究発表会</a>（2022/09/26）
+        [<a href="https://mnakao.net/data/2022/HPC186.pdf" target="_blank" rel="noopener noreferrer">論文</a>]
+        [<a href="https://mnakao.net/data/2022/HPC186-slide.pdf" target="_blank" rel="noopener noreferrer">スライド</a>]
+      </li>
+    </ul>
+
+    <h4>その他</h4>
+    <ul>
+      <li>
+        スーパーコンピュータ「富岳」におけるOpen OnDemandの利用，サイエンティフィック・システム研究会 (2025/08/18)
+        [<a href="https://mnakao.net/data/2025/ss.pdf" target="_blank" rel="noopener noreferrer">スライド</a>]
+        [<a href="https://mnakao.net/data/2025/ss-demo.mov" target="_blank" rel="noopener noreferrer">デモ</a>]
+      </li>
+      <li>
+        Open OnDemand Meeting in Riken R-CCS, Kobe, Hyogo, Japan (2025/05/23)
+        [<a href="https://buckeyemailosu.sharepoint.com/:p:/s/OSCSharedFiles/ERhF5Vjp2pJBoTCfLQenfnUBasTgu3_lL4xtlqcE_i4JaA?rtime=CBC8rG6e3Ug" target="_blank" rel="noopener noreferrer">スライド1</a>]
+        [<a href="https://mnakao.net/data/2025/ood.pdf" target="_blank" rel="noopener noreferrer">スライド2</a>]
+      </li>
+    </ul>
+  </div>
+
+  <!-- フッター -->
+  <footer class="text-center py-2">
+    <p class="mb-0"> &copy; Open OnDemand JP</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
