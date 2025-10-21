@@ -25,6 +25,9 @@
     padding-bottom: 4px;
     margin-top: 20px;
   }
+  ul {
+    text-align: justify;
+  }
   li {
     margin-bottom: 0.25rem;
   }
@@ -54,7 +57,8 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#purpose">目的</a></li>
-          <li class="nav-item"><a class="nav-link" href="#github">GitHubリポジトリ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#github">GitHub</a></li>
+          <li class="nav-item"><a class="nav-link" href="#workshop">ワークショップ</a></li>
           <li class="nav-item"><a class="nav-link" href="#presentations">発表</a></li>
         </ul>
       </div>
@@ -64,7 +68,7 @@
   <!-- 目的 -->
   <div id="purpose" class="container py-3">
     <h3>目的</h3>
-    <p>本サイトは、<a href="https://openondemand.org">Open OnDemand</a>の日本での普及を目的としたコミュニティサイトです。</p>
+    <p>本サイトは、<a href="https://openondemand.org">Open OnDemand</a>の日本での普及を目的としたコミュニティサイトです。日本に関係しているOpen OnDemandの情報をまとめています。また、Slackで情報交換を行っていますので、ご興味のある方は、ぜひご参加ください。</p>
     <div class="d-flex gap-3 pb-3">
       <a href="https://join.slack.com/t/openondemandj-so68876/shared_invite/zt-31i86ntg0-kILa9NfRrdEwE9c3Glft8Q" 
          class="btn btn-success btn-lg d-inline-flex align-items-center shadow-lg" 
@@ -77,7 +81,7 @@
 
   <!-- Passenger Applications -->
   <div id="github" class="container py-3">
-    <h3>GitHubリポジトリ</h3>
+    <h3>GitHub</h3>
     <h4>設定ファイル</h4>
     <ul>
       <li>
@@ -109,32 +113,19 @@
     </ul>
   </div>
 
-  <!-- 発表 -->
-  <div id="presentations" class="container py-2">
-    <h3>発表</h3>
-    <h4>ワークショップ</h4>
+  
+  <!-- ワークショップ -->
+  <div id="workshop" class="container py-2">
+    <h3>ワークショップ</h3>
     <ul>
       <li><a href="https://www.pccluster.org/ja/event/2025/01/250127-hpc-oss-ws.html" target="_blank" rel="noopener noreferrer">HPC-OSSワークショップ</a>（2025/01/28）</li>
       <li><a href="https://www.pccluster.org/ja/event/2023/09/231011-ws-openondemand.html" target="_blank" rel="noopener noreferrer">Open OnDemandワークショップ</a>（2023/10/11）</li>
     </ul>
+  </div>
 
-    <h4>セミナー</h4>
-    <ul>
-      <li>
-        学認クラウドオンデマンド構築サービスハンズオンセミナー．
-        <a href="https://www.media.hiroshima-u.ac.jp/aboutus/cloudsympo/sympo2025/" target="_blank" rel="noopener noreferrer">大学等におけるクラウドサービス利用シンポジウム</a>（2025/03/13）
-      </li>
-      <li>
-        学認クラウドオンデマンド構築サービスを使用したOpenHPC+Open OnDemand体験ハンズオンセミナー．
-        <a href="https://www.iic.hokudai.ac.jp/news/2737/" target="_blank" rel="noopener noreferrer">CloudWeek2024@Hokkaido University</a>（2024/09/11）
-      </li>
-      <li>
-        学認クラウドオンデマンド構築サービスハンズオンセミナー．
-        <a href="https://www.media.hiroshima-u.ac.jp/aboutus/cloudsympo/sympo2024/" target="_blank" rel="noopener noreferrer">大学等におけるクラウドサービス利用シンポジウム</a>（2024/02/29）
-      </li>
-    </ul>
-
-    <h4>学会発表</h4>
+  <div id="presentations" class="container py-2">
+    <h3>発表</h3>
+    <h4>学会</h4>
     <ul>
       <li>
         Masahiro Nakao,  Keiji Yamamoto
@@ -198,15 +189,34 @@
       </li>
     </ul>
 
+    <h4>セミナー</h4>
+    <ul>
+      <li>
+        学認クラウドオンデマンド構築サービスハンズオンセミナー．
+        <a href="https://www.media.hiroshima-u.ac.jp/aboutus/cloudsympo/sympo2025/" target="_blank" rel="noopener noreferrer">大学等におけるクラウドサービス利用シンポジウム</a>（2025/03/13）
+      </li>
+      <li>
+        学認クラウドオンデマンド構築サービスを使用したOpenHPC+Open OnDemand体験ハンズオンセミナー．
+        <a href="https://www.iic.hokudai.ac.jp/news/2737/" target="_blank" rel="noopener noreferrer">CloudWeek2024@Hokkaido University</a>（2024/09/11）
+      </li>
+      <li>
+        学認クラウドオンデマンド構築サービスハンズオンセミナー．
+        <a href="https://www.media.hiroshima-u.ac.jp/aboutus/cloudsympo/sympo2024/" target="_blank" rel="noopener noreferrer">大学等におけるクラウドサービス利用シンポジウム</a>（2024/02/29）
+      </li>
+    </ul>
+    
     <h4>その他</h4>
     <ul>
       <li>
-        スーパーコンピュータ「富岳」におけるOpen OnDemandの利用，サイエンティフィック・システム研究会 (2025/08/18)
+	中尾昌広，"HPCクラスタ用WebポータルOpen OnDemandの紹介とHPCI共用ストレージの利用"，<a href="https://oss-tsukuba.org/event/gw2025" target="_blank" rel="noopener noreferrer">Gfarmワークショップ</a> (2025/12/17)
+      </li>
+      <li>
+        中尾昌広，"スーパーコンピュータ「富岳」におけるOpen OnDemandの利用"，サイエンティフィック・システム研究会 (2025/08/18)
         [<a href="https://mnakao.net/data/2025/ss.pdf" target="_blank" rel="noopener noreferrer">スライド</a>]
         [<a href="https://mnakao.net/data/2025/ss-demo.mov" target="_blank" rel="noopener noreferrer">デモ</a>]
       </li>
       <li>
-        Open OnDemand Meeting in Riken R-CCS, Kobe, Hyogo, Japan (2025/05/23)
+        Masahiro Nakao, "Open OnDemand Meeting in Riken R-CCS", Kobe, Hyogo, Japan (2025/05/23)
         [<a href="https://buckeyemailosu.sharepoint.com/:p:/s/OSCSharedFiles/ERhF5Vjp2pJBoTCfLQenfnUBasTgu3_lL4xtlqcE_i4JaA?rtime=CBC8rG6e3Ug" target="_blank" rel="noopener noreferrer">スライド1</a>]
         [<a href="https://mnakao.net/data/2025/ood.pdf" target="_blank" rel="noopener noreferrer">スライド2</a>]
       </li>
